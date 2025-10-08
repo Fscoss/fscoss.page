@@ -1,8 +1,5 @@
-<Files ".ftp-deploy-sync-state.json">
-  Order allow,deny
-  Deny from all
-</Files>
-<Files ".index.yml">
-  Order allow,deny
-  Deny from all
-</Files>
+RewriteEngine On
+RewriteCond %{REQUEST_URI} /\.ftp-deploy-sync-state\.json$
+RewriteRule .* - [R=404,L]
+RewriteCond %{REQUEST_URI} /\.index.yml$
+RewriteRule .* - [R=404,L]
