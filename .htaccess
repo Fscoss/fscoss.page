@@ -1,5 +1,3 @@
 RewriteEngine On
 RewriteCond %{REQUEST_URI} /\.ftp-deploy-sync-state\.json$
 RewriteRule .* - [R=404,L]
-RewriteCond %{REQUEST_URI} /\.index.yml$
-RewriteRule .* - [R=404,L]
