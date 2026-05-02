@@ -50,7 +50,7 @@ function generateRandomString($length = 4) {
 $id = strtolower(
     $adjectives[array_rand($adjectives)] . '-' .
     $verbs[array_rand($verbs)] . '-' .
-    generateRandomString(4)
+    generateRandomString(5)
 );
 
 // プレーンテキストで出力
