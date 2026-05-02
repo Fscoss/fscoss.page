@@ -10,9 +10,7 @@ $adjectives = [
     'hot', 'cold', 'pale', 'dark', 'light', 'heavy', 'thin', 'thick', 'long', 'short',
     'round', 'flat', 'square', 'pointy', 'curvy', 'twisty', 'bent', 'straight', 'clean', 'messy',
     'neat', 'fancy', 'plain', 'rich', 'poor', 'happy', 'sad', 'angry', 'kind', 'mean',
-    'funny', 'serious', 'brave', 'shy', 'smart', 'silly', 'wise', 'young', 'old', 'new'
-];
-$nouns = [
+    'funny', 'serious', 'brave', 'shy', 'smart', 'silly', 'wise', 'young', 'old', 'new',
     'otter', 'comet', 'lantern', 'pixel', 'falcon', 'cloud', 'ember', 'beacon', 'raven', 'quartz',
     'echo', 'drift', 'glider', 'spark', 'whale', 'canyon', 'orbit', 'flame', 'crystal', 'shadow',
     'pebble', 'stream', 'blizzard', 'nova', 'stone', 'leaf', 'tree', 'river', 'mountain', 'valley',
@@ -51,7 +49,6 @@ function generateRandomString($length = 4) {
 // ID生成
 $id = strtolower(
     $adjectives[array_rand($adjectives)] . '-' .
-    $nouns[array_rand($nouns)] . '-' .
     $verbs[array_rand($verbs)] . '-' .
     generateRandomString(4)
 );
